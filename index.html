@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Yummy</title>
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="./CSS/all.min.css" />
+        <!-- Bootstrap ToolKit -->
+        <link rel="stylesheet" href="./CSS/bootstrap.min.css" />
+        <!-- CSS Stylesheet -->
+        <link rel="stylesheet" href="./CSS/style.css" />
+    </head>
+
+    <body class="bg-dark text-white">
+        <!-- Loading Screen -->
+        <div class="loading-screen vh-100 d-flex justify-content-center align-items-center position-fixed start-0 end-0 top-0 border-0">
+            <span class="loader"></span>
+        </div>
+
+        <!-- SideNavMenu -->
+        <div class="side-nav-menu min-vh-100 position-fixed d-flex top-0 me-3">
+            <!-- Navbar -->
+            <div class="nav-tab d-flex flex-column justify-content-between min-vh-100 p-4 bg-dark text-light">
+                <div class="links">
+                    <ul class="list-unstyled overflow-hidden">
+                        <li class="py-2 position-relative" id="searchBtn">Search</li>
+                        <li class="py-2 position-relative" id="CategoriesBtn">Categories</li>
+                        <li class="py-2 position-relative" id="areaBtn">Area</li>
+                        <li class="py-2 position-relative" id="ingredientsBtn">Ingredients</li>
+                        <li class="py-2 position-relative" id="contactBtn">Contact Us</li>
+                    </ul>
+                </div>
+
+                <div class="nav-footer">
+                    <div class="icons">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-solid fa-globe"></i>
+                    </div>
+                    <div class="footer">
+                        <p>Copyright Â© 2019 All Rights <br />Reserved.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- SideBar -->
+            <div class="sidebar min-vh-100 d-flex flex-column justify-content-between align-items-center flex-shrink-0 bg-light py-4 px-2 text-dark text-center">
+                <img class="logo" src="imgs/logo.png" alt="Delicious Food" />
+
+                <i class="fa-solid fa-align-justify fa-2x" id="openMenuIcon"></i>
+
+                <div>
+                    <i class="fa-solid fa-globe d-block"></i>
+                    <i class="fa-solid fa-share-nodes"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Displying Meals section -->
+        <section class="all-meals min-vh-100 position-relative">
+            <!-- Search Container -->
+            <div class="container" id="searchContainer">
+                <!-- <div class="row py-4 g-4 offset-1">
+                    <div class="col-md-6">
+                        <input class="form-control bg-transparent text-white" type="text" placeholder="Search By Name" />
+                    </div>
+                    <div class="col-md-6">
+                        <input maxlength="1" class="form-control bg-transparent text-white" type="text" placeholder="Search By First Letter" />
+                    </div>
+                </div> -->
+            </div>
+            <div class="container">
+                <div class="row py-5 g-4 offset-1" id="rowData">
+                    <!-- <div class="col-md-3">
+                        <div class="meal position-relative overflow-hidden rounded-2">
+                            <div class="img-holder">
+                                <img src="imgs/dish.jpg" alt="" />
+                                <div class="meal-overlayer position-absolute d-flex align-items-center text-dark p-2">
+                                    <h3>Dish</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+
+        <script src="JS/bootstrap.bundle.min.js"></script>
+        <script src="JS/main.js"></script>
+        <!-- The file commented below works fine too but with Redundancy, Fixed IN the main script -->
+        <!-- <script src="JS/trial2.js"></script> -->
+    </body>
+</html>
